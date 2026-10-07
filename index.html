@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Predictions of Rules — AI Rule Intelligence & Decision Engine</title>
+  <meta name="description" content="Interactive 10-slide PowerPoint presentation web application for Predictions of Rules by Swetha K." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="rule-lab-theme">
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="brand-logo-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+          <path d="M2 17l10 5 10-5"></path>
+          <path d="M2 12l10 5 10-5"></path>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-title">PREDICTIONS OF RULES</span>
+        <span class="brand-subtitle">AI Decision Engine Laboratory</span>
+      </div>
+    </div>
+
+    <!-- Center Slide Selector & Title -->
+    <div class="header-slide-info">
+      <span class="slide-indicator-tag" id="current-slide-title">Slide 1: Predictions of Rules</span>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button id="btn-run-simulator" class="btn btn-amber">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        <span>Rule Demo</span>
+      </button>
+
+      <button id="btn-admin-modal" class="btn btn-outline" title="Admin Asset Management">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <span>Admin</span>
+      </button>
+
+      <button id="btn-fullscreen" class="btn btn-icon" title="Toggle Fullscreen (F)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Presentation Main Container (Full Viewport Slider) -->
+  <main class="presentation-wrapper" id="presentation-viewport">
+    <div class="slides-container" id="slides-container">
+      
+      <!-- ==================== SLIDE 1 ==================== -->
+      <section class="slide active" id="slide-1" data-slide-index="1" data-title="Predictions of Rules">
+        <div class="slide-content slide-layout-hero">
+          <div class="hero-header-badge">
+            <span class="pulse-dot"></span>
+            <span>AI RULE INTELLIGENCE ENGINE &bull; DECISION SYSTEM</span>
+          </div>
+
+          <div class="hero-grid">
+            <!-- Left Metadata Card -->
+            <div class="hero-card card-burgundy">
+              <div class="card-tag">PROJECT PRESENTATION</div>
+              <h1 class="main-title">Predictions of Rules</h1>
+              <p class="subtitle-text">Rule-Based Intelligence & Decision Engineering Architecture</p>
+
+              <div class="student-meta-list">
+                <div class="meta-item">
+                  <span class="meta-label">Student Name</span>
+                  <span class="meta-value highlight-gold">Suvathi P</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Department</span>
+                  <span class="meta-value">B.Tech – Artificial Intelligence and Data Science</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Domain</span>
+                  <span class="meta-value">Artificial Intelligence / Rule-Based Prediction</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Organization</span>
+                  <span class="meta-value editable-org-text" id="display-org-name-slide1">AI Decision Engine Laboratory</span>
+                </div>
+              </div>
+
+              <div class="hero-action-row">
+                <button class="btn btn-gold" id="btn-replay-init">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                  Replay Engine Init
+                </button>
+                <div class="tag-chip">RULES &rarr; PREDICTION &rarr; DECISION</div>
+              </div>
+            </div>
+
+            <!-- Right Column: Student Photo & Interactive Rule Engine Init Animation -->
+            <div class="hero-side-panel">
+              <!-- Student Photo Card (Hidden if empty) -->
+              <div class="student-photo-wrapper" id="student-photo-container">
+                <div class="photo-frame">
+                  <img id="img-student-photo" src="/student.jpg" alt="Student Suvathi P" />
+                </div>
+                <div class="photo-caption">
+                  <strong>Suvathi P</strong>
+                  <span>AI & Data Science Specialist</span>
+                </div>
+              </div>
+
+              <!-- Rule Engine Initialization Terminal Box -->
+              <div class="engine-init-box">
+                <div class="box-header">
+                  <div class="box-dots"><span></span><span></span><span></span></div>
+                  <span class="box-title">RULE ENGINE INITIALIZATION</span>
+                  <span class="box-status">ACTIVE</span>
+                </div>
+                <div class="terminal-body" id="init-terminal-logs">
+                  <!-- Animated via JS -->
+                </div>
+                <div class="engine-conclusion-banner hidden" id="init-banner">
+                  <span class="banner-step">PREDICT</span>
+                  <span class="banner-arrow">&rarr;</span>
+                  <span class="banner-step">APPLY RULE</span>
+                  <span class="banner-arrow">&rarr;</span>
+                  <span class="banner-step">DECIDE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 2 ==================== -->
+      <section class="slide" id="slide-2" data-slide-index="2" data-title="About the Organization">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">About the Organization</h2>
+            <div class="slide-badge">ECOSYSTEM PROFILE</div>
+          </div>
+
+          <div class="org-layout">
+            <!-- Left Info Panel -->
+            <div class="org-info-card">
+              <div class="org-logo-preview" id="org-logo-container">
+                <img id="img-org-logo" src="/logo.jpg" alt="Organization Logo" />
+              </div>
+              <h3 class="org-title" id="display-org-name-slide2">AI Decision Engine Laboratory</h3>
+              <p class="org-intro" id="display-org-intro">
+                Leading research and development organization specializing in automated rule-based decision intelligence, predictive modeling frameworks, and cognitive system architectures.
+              </p>
+
+              <div class="org-details-grid">
+                <div class="detail-box">
+                  <div class="detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div>
+                  <div class="detail-content">
+                    <strong>Main Focus</strong>
+                    <span id="display-org-focus">Rule Intelligence, Automated Inference, Predictive Analytics</span>
+                  </div>
+                </div>
+
+                <div class="detail-box">
+                  <div class="detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+                  <div class="detail-content">
+                    <strong>Relevant Technology / AI Areas</strong>
+                    <span id="display-org-tech">Rule Engines, Expert Systems, Decision Trees, Condition Logic</span>
+                  </div>
+                </div>
+
+                <div class="detail-box">
+                  <div class="detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+                  <div class="detail-content">
+                    <strong>Services & Solutions</strong>
+                    <span id="display-org-services">Decision Automation Systems, Logic Verification, AI Rule Audit</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right AI Ecosystem Tree -->
+            <div class="org-tree-card">
+              <div class="tree-header">
+                <h3>ORGANIZATION AI ECOSYSTEM</h3>
+                <span>Hierarchical Architecture Overview</span>
+              </div>
+              
+              <div class="interactive-tree">
+                <div class="tree-root-node" id="node-org-root">
+                  <div class="node-badge">ROOT ENTITY</div>
+                  <div class="node-title" id="tree-root-label">ORGANIZATION</div>
+                </div>
+
+                <div class="tree-connector-v"></div>
+
+                <div class="tree-level-1">
+                  <div class="tree-branch-node" data-target="branch-ai">
+                    <div class="branch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"></path></svg></div>
+                    <div class="branch-name">AI</div>
+                    <div class="branch-sub">DECISION & RULES</div>
+                  </div>
+
+                  <div class="tree-branch-node" data-target="branch-sw">
+                    <div class="branch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+                    <div class="branch-name">SOFTWARE</div>
+                    <div class="branch-sub">ENGINE PIPELINE</div>
+                  </div>
+
+                  <div class="tree-branch-node" data-target="branch-innov">
+                    <div class="branch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"></path></svg></div>
+                    <div class="branch-name">INNOVATION</div>
+                    <div class="branch-sub">LAB RESEARCH</div>
+                  </div>
+                </div>
+
+                <div class="tree-connector-row">
+                  <div class="t-line"></div>
+                  <div class="t-line"></div>
+                  <div class="t-line"></div>
+                </div>
+
+                <div class="tree-level-2">
+                  <div class="leaf-node">
+                    <span class="leaf-title">ANALYTICS</span>
+                    <span class="leaf-desc">Condition Evaluation</span>
+                  </div>
+
+                  <div class="leaf-node">
+                    <span class="leaf-title">SYSTEMS</span>
+                    <span class="leaf-desc">Rule Priority Engine</span>
+                  </div>
+
+                  <div class="leaf-node">
+                    <span class="leaf-title">SOLUTIONS</span>
+                    <span class="leaf-desc">Predictive Outcomes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 3 ==================== -->
+      <section class="slide" id="slide-3" data-slide-index="3" data-title="Project Objectives">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">Project Objectives</h2>
+            <div class="slide-badge">LEARNING & ACADEMIC GOALS</div>
+          </div>
+
+          <!-- Visual sequence bar -->
+          <div class="visual-sequence-bar">
+            <div class="seq-step active"><span class="seq-num">01</span><span>INPUT</span></div>
+            <div class="seq-arrow">&rarr;</div>
+            <div class="seq-step"><span class="seq-num">02</span><span>CONDITION</span></div>
+            <div class="seq-arrow">&rarr;</div>
+            <div class="seq-step"><span class="seq-num">03</span><span>RULE</span></div>
+            <div class="seq-arrow">&rarr;</div>
+            <div class="seq-step"><span class="seq-num">04</span><span>PREDICTION</span></div>
+            <div class="seq-arrow">&rarr;</div>
+            <div class="seq-step"><span class="seq-num">05</span><span>DECISION</span></div>
+          </div>
+
+          <!-- Objectives Grid (10 Items) -->
+          <div class="objectives-journey-grid" id="objectives-grid">
+            <!-- Rendered dynamically or static 10 items -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 4 ==================== -->
+      <section class="slide" id="slide-4" data-slide-index="4" data-title="Technology / Domain & Tools">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">Technology / Domain</h2>
+            <div class="slide-badge">TOOLS & FRAMEWORKS USED</div>
+          </div>
+
+          <div class="tech-slide-grid">
+            <!-- Main Domain Card -->
+            <div class="domain-banner-card">
+              <div class="domain-icon-box">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.5 7.5"></path><path d="M12 12v9.5"></path></svg>
+              </div>
+              <div class="domain-text">
+                <span class="domain-label">PRIMARY DOMAIN</span>
+                <h3 class="domain-title">Artificial Intelligence / Rule-Based Prediction</h3>
+                <p>Systematic modeling of conditional logic, rule priority mapping, and deterministic prediction evaluation.</p>
+              </div>
+            </div>
+
+            <!-- Categories Grid (Actual Technologies Only) -->
+            <div class="tools-grid">
+              <!-- Programming -->
+              <div class="tool-category-card">
+                <div class="tool-cat-header">
+                  <div class="cat-icon burgundy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+                  <h4>Programming</h4>
+                </div>
+                <div class="tag-cloud">
+                  <span class="tech-chip highlight">Python</span>
+                  <span class="tech-chip highlight">JavaScript</span>
+                </div>
+              </div>
+
+              <!-- Logic -->
+              <div class="tool-category-card">
+                <div class="tool-cat-header">
+                  <div class="cat-icon amber"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg></div>
+                  <h4>Logic</h4>
+                </div>
+                <div class="tag-cloud">
+                  <span class="tech-chip">Rule-based logic</span>
+                  <span class="tech-chip">Conditional statements</span>
+                  <span class="tech-chip">Decision trees</span>
+                  <span class="tech-chip">Rule evaluation</span>
+                </div>
+              </div>
+
+              <!-- Data -->
+              <div class="tool-category-card">
+                <div class="tool-cat-header">
+                  <div class="cat-icon gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3"></path></svg></div>
+                  <h4>Data</h4>
+                </div>
+                <div class="tag-cloud">
+                  <span class="tech-chip">JSON</span>
+                  <span class="tech-chip">CSV</span>
+                </div>
+              </div>
+
+              <!-- Interface -->
+              <div class="tool-category-card">
+                <div class="tool-cat-header">
+                  <div class="cat-icon burgundy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+                  <h4>Interface</h4>
+                </div>
+                <div class="tag-cloud">
+                  <span class="tech-chip">HTML</span>
+                  <span class="tech-chip">CSS</span>
+                  <span class="tech-chip">JavaScript</span>
+                </div>
+              </div>
+
+              <!-- Development -->
+              <div class="tool-category-card">
+                <div class="tool-cat-header">
+                  <div class="cat-icon brown"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+                  <h4>Development</h4>
+                </div>
+                <div class="tag-cloud">
+                  <span class="tech-chip">VS Code</span>
+                  <span class="tech-chip">Git / GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 5 ==================== -->
+      <section class="slide" id="slide-5" data-slide-index="5" data-title="Tasks Undertaken">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">Project / Tasks Undertaken</h2>
+            <div class="slide-badge">WORKFLOW PIPELINE</div>
+          </div>
+
+          <div class="tasks-banner">
+            <h3>PROJECT: <span class="highlight-gold">Predictions of Rules</span></h3>
+            <p>Click any stage along the rule execution pipeline to explore details:</p>
+          </div>
+
+          <!-- Interactive Process Flow Stepper -->
+          <div class="tasks-pipeline-container">
+            <div class="pipeline-track">
+              <div class="pipeline-stage active" data-stage="1">
+                <div class="stage-num">01</div>
+                <div class="stage-title">INPUT DATA</div>
+                <div class="stage-indicator"></div>
+              </div>
+              <div class="pipeline-arrow">&rarr;</div>
+
+              <div class="pipeline-stage" data-stage="2">
+                <div class="stage-num">02</div>
+                <div class="stage-title">CONDITION CHECK</div>
+                <div class="stage-indicator"></div>
+              </div>
+              <div class="pipeline-arrow">&rarr;</div>
+
+              <div class="pipeline-stage" data-stage="3">
+                <div class="stage-num">03</div>
+                <div class="stage-title">RULE MATCHING</div>
+                <div class="stage-indicator"></div>
+              </div>
+              <div class="pipeline-arrow">&rarr;</div>
+
+              <div class="pipeline-stage" data-stage="4">
+                <div class="stage-num">04</div>
+                <div class="stage-title">RULE PRIORITY</div>
+                <div class="stage-indicator"></div>
+              </div>
+              <div class="pipeline-arrow">&rarr;</div>
+
+              <div class="pipeline-stage" data-stage="5">
+                <div class="stage-num">05</div>
+                <div class="stage-title">PREDICTION</div>
+                <div class="stage-indicator"></div>
+              </div>
+              <div class="pipeline-arrow">&rarr;</div>
+
+              <div class="pipeline-stage" data-stage="6">
+                <div class="stage-num">06</div>
+                <div class="stage-title">DECISION</div>
+                <div class="stage-indicator"></div>
+              </div>
+              <div class="pipeline-arrow">&rarr;</div>
+
+              <div class="pipeline-stage" data-stage="7">
+                <div class="stage-num">07</div>
+                <div class="stage-title">OUTPUT</div>
+                <div class="stage-indicator"></div>
+              </div>
+            </div>
+
+            <!-- Detail Box Display for Clicked Stage -->
+            <div class="stage-detail-card" id="stage-detail-box">
+              <div class="detail-header">
+                <span class="detail-stage-badge" id="detail-stage-num">STAGE 01</span>
+                <h3 id="detail-stage-title">Input Data</h3>
+              </div>
+              <p id="detail-stage-desc" class="detail-desc">
+                Information provided to the rule system. Receives raw parameters, state values, and category attributes to format them into structured facts for evaluation.
+              </p>
+
+              <div class="stage-metrics-row">
+                <div class="metric-pill"><span>Latency:</span> <strong>&lt; 1ms</strong></div>
+                <div class="metric-pill"><span>Validation:</span> <strong>Schema Passed</strong></div>
+                <div class="metric-pill"><span>Format:</span> <strong>JSON Fact Object</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 6 ==================== -->
+      <section class="slide" id="slide-6" data-slide-index="6" data-title="System Architecture">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">System / Project Architecture</h2>
+            <div class="slide-badge">DYNAMIC INTERACTIVE DIAGRAM</div>
+          </div>
+
+          <p class="arch-subtext">
+            Click any architecture module below to expand technical details. Connecting SVG paths recalculate dynamically!
+          </p>
+
+          <div class="arch-viewport" id="arch-viewport">
+            <!-- SVG Overlay Layer for Dynamic Connectors -->
+            <svg class="arch-svg-layer" id="arch-svg-layer"></svg>
+
+            <!-- Interactive Architecture Grid Boxes -->
+            <div class="arch-nodes-grid" id="arch-nodes-grid">
+              <!-- STEP 1 -->
+              <div class="arch-node-box" id="node-user-input" data-node="user-input">
+                <div class="node-header">
+                  <span class="node-step">01</span>
+                  <h4>1. USER INPUT</h4>
+                </div>
+                <div class="node-preview">Entering Facts & Numbers</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> This is the starting point where you enter numbers or information into the computer. Think of it like typing your test score into a form.
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">REAL-LIFE EXAMPLE INPUT</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">📊 <span>Test Score:</span> <strong>75 Marks</strong></div>
+                      <div class="vcard-item">📈 <span>Attendance:</span> <strong>60%</strong></div>
+                      <div class="vcard-item">🏷️ <span>Category:</span> <strong>Grade A Student</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> Like filling out a form with your details before applying rules!
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 2 -->
+              <div class="arch-node-box" id="node-input-processor" data-node="input-processor">
+                <div class="node-header">
+                  <span class="node-step">02</span>
+                  <h4>2. INPUT PROCESSOR</h4>
+                </div>
+                <div class="node-preview">Checking for Errors</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> Cleans and checks the entered data to make sure there are no typos, negative values, or blank fields.
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">DATA VALIDATION CHECK</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">✓ <span>Score Check:</span> <strong>Valid Number (75)</strong></div>
+                      <div class="vcard-item">✓ <span>Format Check:</span> <strong>No Blanks Found</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> Double-checking your exam paper so no questions are left blank!
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 3 -->
+              <div class="arch-node-box" id="node-condition-evaluator" data-node="condition-evaluator">
+                <div class="node-header">
+                  <span class="node-step">03</span>
+                  <h4>3. CONDITION EVALUATOR</h4>
+                </div>
+                <div class="node-preview">Testing IF Statements</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> Tests your data against IF rules to see if conditions match (YES or NO).
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">IF / THEN CONDITIONS</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">⚡ <span>Condition 1:</span> <strong>Is Score > 70? &rarr; YES</strong></div>
+                      <div class="vcard-item">⚡ <span>Condition 2:</span> <strong>Is Attendance >= 50%? &rarr; YES</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> Checking if your marks are high enough to qualify for an award!
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 4 -->
+              <div class="arch-node-box" id="node-rule-engine" data-node="rule-engine">
+                <div class="node-header">
+                  <span class="node-step">04</span>
+                  <h4>4. RULE ENGINE</h4>
+                </div>
+                <div class="node-preview">Finding Matching Rules</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> Searches the rulebook to pick all rules that fit your current test score and details.
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">MATCHED RULES IN DATABASE</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">🔍 <span>Rule #01:</span> <strong>High Achievement Rule (MATCHED)</strong></div>
+                      <div class="vcard-item">🔍 <span>Rule #02:</span> <strong>Standard Attendance Rule (MATCHED)</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> A teacher scanning the award book to see which prizes you qualify for!
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 5 -->
+              <div class="arch-node-box" id="node-rule-prioritization" data-node="rule-prioritization">
+                <div class="node-header">
+                  <span class="node-step">05</span>
+                  <h4>5. RULE PRIORITIZATION</h4>
+                </div>
+                <div class="node-preview">Picking the Best Rule</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> If multiple rules match at the same time, this step picks the most important winning rule.
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">PRIORITY WINNER</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">🏆 <span>Winning Rule:</span> <strong>Rule #01 (Priority Score: 95/100)</strong></div>
+                      <div class="vcard-item">🥈 <span>Secondary Rule:</span> <strong>Rule #02 (Priority Score: 80/100)</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> Choosing the Gold Medal prize over the Silver Medal when both apply!
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 6 -->
+              <div class="arch-node-box" id="node-prediction-engine" data-node="prediction-engine">
+                <div class="node-header">
+                  <span class="node-step">06</span>
+                  <h4>6. PREDICTION ENGINE</h4>
+                </div>
+                <div class="node-preview">Predicting the Result</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> Calculates the predicted result based on the winning rule.
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">PREDICTED OUTCOME</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">🎯 <span>Predicted Class:</span> <strong>Passed with Distinction (Class X)</strong></div>
+                      <div class="vcard-item">⭐ <span>Confidence:</span> <strong>High Certainty</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> Predicting that the student will graduate with top honors!
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 7 -->
+              <div class="arch-node-box" id="node-decision-module" data-node="decision-module">
+                <div class="node-header">
+                  <span class="node-step">07</span>
+                  <h4>7. DECISION MODULE</h4>
+                </div>
+                <div class="node-preview">Making the Final Choice</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> Takes the predicted result and turns it into a real-world decision action.
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">DECISION COMMAND</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">🚀 <span>Action:</span> <strong>Approve Distinction Certificate</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> Officially signing and issuing the passing certificate!
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 8 -->
+              <div class="arch-node-box" id="node-final-output" data-node="final-output">
+                <div class="node-header">
+                  <span class="node-step">08</span>
+                  <h4>8. FINAL OUTPUT</h4>
+                </div>
+                <div class="node-preview">Displaying Result on Screen</div>
+                <div class="node-expand-body">
+                  <p class="node-simple-desc">
+                    💡 <strong>Simple Explanation:</strong> Shows the final result clearly on the screen for the user to see.
+                  </p>
+                  
+                  <div class="arch-visual-card">
+                    <div class="vcard-title">FINAL RESULT ON SCREEN</div>
+                    <div class="vcard-grid">
+                      <div class="vcard-item">🎉 <span>Final Output:</span> <strong>PREDICTION COMPLETE &bull; EXCELLENT RESULT</strong></div>
+                    </div>
+                  </div>
+
+                  <div class="arch-note-pill">
+                    <span>Analogy:</span> Displaying your final report card on your screen!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 7 ==================== -->
+      <section class="slide" id="slide-7" data-slide-index="7" data-title="Challenges & Solutions">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">Challenges & Solutions</h2>
+            <div class="slide-badge">SYSTEM DESIGN LESSONS</div>
+          </div>
+
+          <div class="challenges-grid">
+            <!-- Card 1 -->
+            <div class="challenge-card">
+              <div class="cs-badge amber">CASE 01</div>
+              <div class="cs-flow">
+                <div class="cs-item challenge">
+                  <span class="lbl">CHALLENGE</span>
+                  <p>Designing clear and consistent rules without logic overlap.</p>
+                </div>
+                <div class="cs-item analysis">
+                  <span class="lbl">ANALYSIS</span>
+                  <p>Overlapping rule conditions lead to non-deterministic execution states.</p>
+                </div>
+                <div class="cs-item solution">
+                  <span class="lbl">SOLUTION</span>
+                  <p>Define conditions and expected outputs systematically using strict schema validation.</p>
+                </div>
+                <div class="cs-item learning">
+                  <span class="lbl">LEARNING</span>
+                  <p>Structured condition syntax guarantees clean rule isolation and readability.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="challenge-card">
+              <div class="cs-badge burgundy">CASE 02</div>
+              <div class="cs-flow">
+                <div class="cs-item challenge">
+                  <span class="lbl">CHALLENGE</span>
+                  <p>Handling multiple matching rules triggering simultaneously.</p>
+                </div>
+                <div class="cs-item analysis">
+                  <span class="lbl">ANALYSIS</span>
+                  <p>Conflict states arise when multiple rules satisfy input conditions at once.</p>
+                </div>
+                <div class="cs-item solution">
+                  <span class="lbl">SOLUTION</span>
+                  <p>Use rule priority scoring and structured evaluation order matrix.</p>
+                </div>
+                <div class="cs-item learning">
+                  <span class="lbl">LEARNING</span>
+                  <p>Priority ranking guarantees predictable deterministic outcome selection.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="challenge-card">
+              <div class="cs-badge gold">CASE 03</div>
+              <div class="cs-flow">
+                <div class="cs-item challenge">
+                  <span class="lbl">CHALLENGE</span>
+                  <p>Producing consistent predictions across diverse data inputs.</p>
+                </div>
+                <div class="cs-item analysis">
+                  <span class="lbl">ANALYSIS</span>
+                  <p>Edge-case input values could bypass conditional bounds and return undefined states.</p>
+                </div>
+                <div class="cs-item solution">
+                  <span class="lbl">SOLUTION</span>
+                  <p>Validate conditions and rule logic carefully with explicit fallback default rules.</p>
+                </div>
+                <div class="cs-item learning">
+                  <span class="lbl">LEARNING</span>
+                  <p>Comprehensive boundary verification prevents runtime inference failures.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="challenge-card">
+              <div class="cs-badge brown">CASE 04</div>
+              <div class="cs-flow">
+                <div class="cs-item challenge">
+                  <span class="lbl">CHALLENGE</span>
+                  <p>Making complex rule results easy to understand and audit.</p>
+                </div>
+                <div class="cs-item analysis">
+                  <span class="lbl">ANALYSIS</span>
+                  <p>Opaque logic flows decrease developer confidence and make debugging tedious.</p>
+                </div>
+                <div class="cs-item solution">
+                  <span class="lbl">SOLUTION</span>
+                  <p>Display the decision path visually with step-by-step condition highlights.</p>
+                </div>
+                <div class="cs-item learning">
+                  <span class="lbl">LEARNING</span>
+                  <p>Visual explainability is fundamental for transparent decision engineering systems.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 8 ==================== -->
+      <section class="slide" id="slide-8" data-slide-index="8" data-title="Skills & Learning Outcomes">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">Skills & Learning Outcomes</h2>
+            <div class="slide-badge">COMPETENCY MAP</div>
+          </div>
+
+          <div class="skills-layout">
+            <!-- Learning Progression Bar -->
+            <div class="progression-banner">
+              <span class="prog-label">LEARNING PROGRESSION:</span>
+              <div class="prog-steps">
+                <div class="prog-step">UNDERSTAND</div>
+                <div class="prog-arr">&rarr;</div>
+                <div class="prog-step">DEFINE</div>
+                <div class="prog-arr">&rarr;</div>
+                <div class="prog-step">EVALUATE</div>
+                <div class="prog-arr">&rarr;</div>
+                <div class="prog-step">PREDICT</div>
+                <div class="prog-arr">&rarr;</div>
+                <div class="prog-step highlight">DECIDE</div>
+              </div>
+            </div>
+
+            <!-- Central Radial Skill Map -->
+            <div class="skills-map-container">
+              <div class="central-node">
+                <div class="node-inner">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10"></path></svg>
+                  <span>RULE PREDICTION</span>
+                </div>
+              </div>
+
+              <!-- 9 Connected Skill Nodes -->
+              <div class="skill-nodes-grid">
+                <div class="skill-card"><span class="skill-num">01</span><span>Rule-Based Logic</span></div>
+                <div class="skill-card"><span class="skill-num">02</span><span>Condition Analysis</span></div>
+                <div class="skill-card"><span class="skill-num">03</span><span>Decision Making</span></div>
+                <div class="skill-card"><span class="skill-num">04</span><span>Prediction</span></div>
+                <div class="skill-card"><span class="skill-num">05</span><span>Data Handling</span></div>
+                <div class="skill-card"><span class="skill-num">06</span><span>Logical Thinking</span></div>
+                <div class="skill-card"><span class="skill-num">07</span><span>Problem Solving</span></div>
+                <div class="skill-card"><span class="skill-num">08</span><span>Algorithmic Thinking</span></div>
+                <div class="skill-card"><span class="skill-num">09</span><span>System Design</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 9 ==================== -->
+      <section class="slide" id="slide-9" data-slide-index="9" data-title="Conclusion & Future Enhancements">
+        <div class="slide-content">
+          <div class="slide-header">
+            <h2 class="slide-heading">Conclusion & Future Enhancements</h2>
+            <div class="slide-badge">PROJECT SUMMARY & ROADMAP</div>
+          </div>
+
+          <div class="conc-future-grid">
+            <!-- Left: Conclusion -->
+            <div class="conc-card">
+              <div class="card-header-tag burgundy">PROJECT CONCLUSION</div>
+              <h3>Summary & Insights</h3>
+              <p>
+                The project demonstrates how predefined rules can be systematically structured to evaluate input conditions, match relevant logic clauses, generate predictions, support automated decision-making, and produce structured system outputs.
+              </p>
+              <div class="conclusion-bullets">
+                <div class="bullet-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Evaluates complex condition sets deterministically</span>
+                </div>
+                <div class="bullet-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Matches relevant rule priorities without ambiguity</span>
+                </div>
+                <div class="bullet-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Generates explainable predictions and decision traces</span>
+                </div>
+              </div>
+              <p class="conc-foot">
+                This foundation bridges classical expert rule systems with scalable modern decision architectures.
+              </p>
+            </div>
+
+            <!-- Right: Future Enhancements -->
+            <div class="future-card">
+              <div class="card-header-tag gold">FUTURE ENHANCEMENTS</div>
+
+              <!-- Visual Progression -->
+              <div class="future-progression">
+                <span class="fp-item">STATIC RULES</span>
+                <span class="fp-arr">&rarr;</span>
+                <span class="fp-item">SMART RULES</span>
+                <span class="fp-arr">&rarr;</span>
+                <span class="fp-item">ADAPTIVE RULES</span>
+                <span class="fp-arr">&rarr;</span>
+                <span class="fp-item">AI-ASSISTED RULES</span>
+                <span class="fp-arr">&rarr;</span>
+                <span class="fp-item highlight">INTELLIGENT DECISION ENGINE</span>
+              </div>
+
+              <!-- 10 Future Enhancements List -->
+              <div class="enhancements-grid">
+                <div class="enh-chip"><span class="enh-num">01</span> Machine learning integration</div>
+                <div class="enh-chip"><span class="enh-num">02</span> Dynamic rule generation</div>
+                <div class="enh-chip"><span class="enh-num">03</span> Natural language rule creation</div>
+                <div class="enh-chip"><span class="enh-num">04</span> Adaptive rule prioritization</div>
+                <div class="enh-chip"><span class="enh-num">05</span> Explainable AI</div>
+                <div class="enh-chip"><span class="enh-num">06</span> Real-time prediction</div>
+                <div class="enh-chip"><span class="enh-num">07</span> Advanced decision analytics</div>
+                <div class="enh-chip"><span class="enh-num">08</span> Automated rule optimization</div>
+                <div class="enh-chip"><span class="enh-num">09</span> Hybrid AI + rule-based systems</div>
+                <div class="enh-chip"><span class="enh-num">10</span> Confidence-based predictions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SLIDE 10 ==================== -->
+      <section class="slide" id="slide-10" data-slide-index="10" data-title="Completion Certificate">
+        <div class="slide-content slide-layout-cert">
+          <div class="slide-header">
+            <h2 class="slide-heading">Completion Certificate</h2>
+            <div class="slide-badge">OFFICIAL VERIFICATION</div>
+          </div>
+
+          <div class="certificate-wrapper">
+            <!-- Controls Toolbar -->
+            <div class="cert-toolbar">
+              <button class="btn btn-sm btn-outline" id="cert-zoom-in" title="Zoom In (+)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Zoom In
+              </button>
+
+              <button class="btn btn-sm btn-outline" id="cert-zoom-out" title="Zoom Out (-)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Zoom Out
+              </button>
+
+              <button class="btn btn-sm btn-outline" id="cert-reset" title="Reset Zoom">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+                Reset
+              </button>
+
+              <button class="btn btn-sm btn-outline" id="cert-fullscreen" title="Fullscreen Certificate View">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
+                Fullscreen
+              </button>
+            </div>
+
+            <!-- Certificate Aspect-Ratio Preserved Image Box -->
+            <div class="cert-image-viewport" id="cert-viewport">
+              <div class="cert-image-stage" id="cert-stage">
+                <img id="img-certificate" src="/certificate.jpg" alt="Completion Certificate for Predictions of Rules" />
+              </div>
+            </div>
+
+            <!-- Mandatory Footer Text -->
+            <div class="cert-footer-text">
+              <p class="cert-completion-line">Predictions of Rules &ndash; Completed</p>
+              <h1 class="thank-you-title">Thank You</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Navigation Control Bar (Fixed Bottom) -->
+  <footer class="presentation-footer">
+    <div class="footer-left">
+      <button id="btn-prev" class="nav-btn" title="Previous Slide (Left Arrow)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Previous</span>
+      </button>
+
+      <span class="slide-counter-badge" id="slide-counter">Slide 01 / 10</span>
+
+      <button id="btn-next" class="nav-btn" title="Next Slide (Right Arrow)">
+        <span>Next</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+
+    <!-- Slide Indicator Dots -->
+    <div class="footer-center">
+      <div class="slide-dots-container" id="slide-dots">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+
+    <!-- Progress & Keyboard Shortcuts Hint -->
+    <div class="footer-right">
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+      </div>
+      <span class="key-hint-text">Use &larr; &rarr; keys &bull; Home / End</span>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL: INTERACTIVE RULE SIMULATOR ==================== -->
+  <div class="modal-backdrop hidden" id="modal-simulator">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-icon amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+          <div>
+            <h2>RULE PREDICTION DEMO</h2>
+            <span class="modal-subtitle">Interactive AI Decision Laboratory & Decision Path Simulation</span>
+          </div>
+        </div>
+        <button class="modal-close" id="close-modal-simulator">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="demo-watermark-tag">DEMO / SAMPLE DATA &bull; SIMULATED PRESENTATION FEATURE</div>
+
+        <div class="sim-grid">
+          <!-- Input Form Panel -->
+          <div class="sim-card sim-inputs">
+            <h3>1. SAMPLE INPUTS</h3>
+
+            <div class="input-field-group">
+              <label for="sim-val-a">Value A (Numeric Parameter): <span class="val-badge" id="lbl-val-a">75</span></label>
+              <input type="range" id="sim-val-a" min="0" max="100" value="75" class="range-slider" />
+            </div>
+
+            <div class="input-field-group">
+              <label for="sim-val-b">Value B (Numeric Parameter): <span class="val-badge" id="lbl-val-b">60</span></label>
+              <input type="range" id="sim-val-b" min="0" max="100" value="60" class="range-slider" />
+            </div>
+
+            <div class="input-field-group">
+              <label for="sim-category">Category Selection:</label>
+              <select id="sim-category" class="custom-select">
+                <option value="A" selected>Category A (High Efficiency)</option>
+                <option value="B">Category B (Standard Threshold)</option>
+                <option value="C">Category C (Conservative Boundary)</option>
+              </select>
+            </div>
+
+            <button class="btn btn-amber btn-block" id="btn-run-demo-eval">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              RUN RULE DEMO
+            </button>
+          </div>
+
+          <!-- Decision Tree Visual -->
+          <div class="sim-card sim-tree">
+            <h3>2. INTERACTIVE DECISION TREE</h3>
+
+            <div class="tree-visual-box">
+              <div class="dt-node root active" id="dt-node-input">
+                <span>INPUT</span>
+                <small>Val A: <b id="dt-val-a">75</b> | Val B: <b id="dt-val-b">60</b></small>
+              </div>
+
+              <div class="dt-connector-vertical"></div>
+
+              <div class="dt-row">
+                <div class="dt-node cond" id="dt-cond-a">
+                  <span>CONDITION A</span>
+                  <small>Val A &gt; 70?</small>
+                </div>
+                <div class="dt-node cond" id="dt-cond-b">
+                  <span>CONDITION B</span>
+                  <small>Val B &ge; 50?</small>
+                </div>
+              </div>
+
+              <div class="dt-row-connectors">
+                <div class="dt-line-down"></div>
+                <div class="dt-line-down"></div>
+              </div>
+
+              <div class="dt-row">
+                <div class="dt-node rule-card-mini" id="dt-rule-01" data-rule="rule1">
+                  <span>RULE 01</span>
+                  <small>IF A &gt; 70 &amp; Cat A</small>
+                </div>
+                <div class="dt-node rule-card-mini" id="dt-rule-02" data-rule="rule2">
+                  <span>RULE 02</span>
+                  <small>IF B &ge; 50 &amp; Cat &ne; C</small>
+                </div>
+              </div>
+
+              <div class="dt-connector-merge"></div>
+
+              <div class="dt-node outcome" id="dt-prediction-node">
+                <span>PREDICTION</span>
+                <small id="dt-prediction-label">Optimal Class X Output</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rule Cards & Prediction Result Card -->
+          <div class="sim-card sim-results">
+            <h3>3. RULE MATCHING & PREDICTION RESULT</h3>
+
+            <!-- Expandable Rule Cards -->
+            <div class="rule-cards-list">
+              <div class="expandable-rule-card active" id="card-rule-01">
+                <div class="erc-header">
+                  <span class="erc-badge">RULE 01</span>
+                  <strong>IF Value A &gt; 70 AND Category == 'A'</strong>
+                  <span class="erc-status matched">MATCHED</span>
+                </div>
+                <div class="erc-body">
+                  <div class="erc-logic">
+                    <p>THEN Prediction: <strong>Optimal High Efficiency (Class X)</strong></p>
+                    <p class="erc-sub">Priority Score: 95/100 &bull; Condition Satisfied</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expandable-rule-card" id="card-rule-02">
+                <div class="erc-header">
+                  <span class="erc-badge">RULE 02</span>
+                  <strong>IF Value B &ge; 50 AND Category &ne; 'C'</strong>
+                  <span class="erc-status">STANDBY</span>
+                </div>
+                <div class="erc-body">
+                  <div class="erc-logic">
+                    <p>THEN Prediction: <strong>Standard Balanced Decision (Class Y)</strong></p>
+                    <p class="erc-sub">Priority Score: 80/100 &bull; Condition Evaluation Secondary</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prediction Result Card -->
+            <div class="prediction-result-card" id="pred-result-card">
+              <div class="prc-title">PREDICTION RESULT</div>
+              <div class="prc-grid">
+                <div class="prc-item">
+                  <span class="prc-lbl">Rule Matched:</span>
+                  <strong id="prc-matched-rule" class="highlight-gold">RULE 01</strong>
+                </div>
+                <div class="prc-item">
+                  <span class="prc-lbl">Condition:</span>
+                  <span id="prc-condition-status" class="status-satisfied">Satisfied</span>
+                </div>
+                <div class="prc-item full">
+                  <span class="prc-lbl">Decision:</span>
+                  <strong id="prc-decision-output">[Sample Result: High-Efficiency Execution Initiated]</strong>
+                </div>
+                <div class="prc-item">
+                  <span class="prc-lbl">Status:</span>
+                  <span class="badge-rule-applied">RULE APPLIED</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: ADMIN ASSET MANAGEMENT PAGE ==================== -->
+  <div class="modal-backdrop hidden" id="modal-admin">
+    <div class="modal-dialog modal-md">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-icon burgundy"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+          <div>
+            <h2>Admin Control Center</h2>
+            <span class="modal-subtitle">URL: <code>/admin</code> or <code>#admin</code> &bull; Asset & System Settings</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <button class="btn btn-xs btn-outline" id="btn-back-to-presentation" title="Return to Slide Presentation">
+            &larr; Back to Presentation
+          </button>
+          <button class="modal-close" id="close-modal-admin">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <!-- Auth Form if not logged in -->
+        <div id="admin-auth-section" class="admin-auth-box">
+          <p>Please enter the Administrator PIN to access asset management controls:</p>
+          <div class="pin-input-row">
+            <input type="password" id="admin-pin-input" placeholder="Enter PIN (e.g. suva1206)" class="custom-input" />
+            <button class="btn btn-burgundy" id="btn-admin-login">Unlock Admin</button>
+          </div>
+          <span class="auth-error-msg hidden" id="admin-pin-error">Incorrect PIN. Please try again.</span>
+        </div>
+
+        <!-- Admin Upload Controls (Shown when authenticated) -->
+        <div id="admin-controls-section" class="admin-controls-box hidden">
+          <div class="admin-status-banner">
+            <span>AUTHENTICATED AS ADMINISTRATOR</span>
+            <button class="btn btn-xs btn-outline" id="btn-admin-logout">Lock Panel</button>
+          </div>
+
+          <!-- Editable Organization Info Fields -->
+          <div class="admin-card">
+            <h3>Editable Organization Details</h3>
+            <div class="form-group">
+              <label>Organization Name:</label>
+              <input type="text" id="edit-org-name" class="custom-input" value="AI Decision Engine Laboratory" />
+            </div>
+            <div class="form-group">
+              <label>Short Introduction:</label>
+              <textarea id="edit-org-intro" class="custom-input" rows="2">Leading research and development organization specializing in automated rule-based decision intelligence, predictive modeling frameworks, and cognitive system architectures.</textarea>
+            </div>
+            <button class="btn btn-sm btn-gold" id="btn-save-org-details">Save Organization Text</button>
+          </div>
+
+          <!-- Asset Upload 1: Student Photo -->
+          <div class="admin-card">
+            <div class="admin-card-head">
+              <h4>1. Student Photo</h4>
+              <span class="asset-status" id="status-student-photo">Active Image</span>
+            </div>
+            <p class="asset-hint">Preserves original aspect ratio. If deleted, the photo container will automatically hide.</p>
+            <div class="admin-btn-row">
+              <label class="btn btn-sm btn-outline file-label">
+                Upload New Photo
+                <input type="file" id="file-student-photo" accept="image/*" class="hidden-file-input" />
+              </label>
+              <button class="btn btn-sm btn-danger" id="btn-delete-student-photo">Delete Photo</button>
+            </div>
+          </div>
+
+          <!-- Asset Upload 2: Organization Logo -->
+          <div class="admin-card">
+            <div class="admin-card-head">
+              <h4>2. Organization Logo</h4>
+              <span class="asset-status" id="status-org-logo">Active Image</span>
+            </div>
+            <p class="asset-hint">Displays on Slide 2 and organization profiles.</p>
+            <div class="admin-btn-row">
+              <label class="btn btn-sm btn-outline file-label">
+                Upload New Logo
+                <input type="file" id="file-org-logo" accept="image/*" class="hidden-file-input" />
+              </label>
+              <button class="btn btn-sm btn-danger" id="btn-reset-org-logo">Reset Default Logo</button>
+            </div>
+          </div>
+
+          <!-- Asset Upload 3: Completion Certificate -->
+          <div class="admin-card">
+            <div class="admin-card-head">
+              <h4>3. Completion Certificate</h4>
+              <span class="asset-status" id="status-certificate">Active Image</span>
+            </div>
+            <p class="asset-hint">Displays on Slide 10 with interactive pan/zoom tools.</p>
+            <div class="admin-btn-row">
+              <label class="btn btn-sm btn-outline file-label">
+                Upload New Certificate
+                <input type="file" id="file-certificate" accept="image/*" class="hidden-file-input" />
+              </label>
+              <button class="btn btn-sm btn-danger" id="btn-reset-certificate">Reset Default Certificate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
